@@ -107,12 +107,12 @@ INSERT INTO
 VALUES (
         'ST1001',
         'Nizar Student',
-        '$2a$10$0HxtD7nG7m2YFAsYShAtte52jNJpN1yoyBqSPj1Z4FJ0nEdRkqwIG'
+        '$2b$10$TJUTwnUGjCiiuteSF.dS7etQRiU6z/cKG615ToOQerrkVHOMQFh5e'
     ),
     (
         'ST1002',
         'John Student',
-        '$2a$10$QnLKbZ9mBslo2vCKKA6i3OmS6FXloSNoiMj9FjbeckH1zj7wYPzCq'
+        '$2b$10$TJUTwnUGjCiiuteSF.dS7etQRiU6z/cKG615ToOQerrkVHOMQFh5e'
     );
 
 -- Sample lecturers (passwords hashed with bcrypt "12345")
@@ -121,12 +121,12 @@ INSERT INTO
 VALUES (
         'lecturer@test.com',
         'Mr. John',
-        '$2a$10$0HxtD7nG7m2YFAsYShAtte52jNJpN1yoyBqSPj1Z4FJ0nEdRkqwIG'
+        '$2b$10$TJUTwnUGjCiiuteSF.dS7etQRiU6z/cKG615ToOQerrkVHOMQFh5e'
     ),
     (
         'lecturer@test1.com',
         'Mr. Teacher',
-        '$2a$10$QnLKbZ9mBslo2vCKKA6i3OmS6FXloSNoiMj9FjbeckH1zj7wYPzCq'
+        '$2b$10$TJUTwnUGjCiiuteSF.dS7etQRiU6z/cKG615ToOQerrkVHOMQFh5e'
     );
 
 -- Sample courses
