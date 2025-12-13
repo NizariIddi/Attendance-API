@@ -68,94 +68,146 @@
             </div>
         </section>
 
-
-        <section class="py-12">
+        <section class="py-2">
             <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6">
-                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform duration-300 text-center">
+                
+                <!-- Card 1 -->
+                <div class="bg-white/20 backdrop-blur-md border border-white/30 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform duration-300 text-center">
                     <h3 class="text-3xl font-bold text-green-700">120</h3>
                     <p class="text-gray-600 mt-2">Students</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform duration-300 text-center">
+
+                <!-- Card 2 -->
+                <div class="bg-white/20 backdrop-blur-md border border-white/30 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform duration-300 text-center">
                     <h3 class="text-3xl font-bold text-green-700">12</h3>
                     <p class="text-gray-600 mt-2">Lectures</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform duration-300 text-center">
+
+                <!-- Card 3 -->
+                <div class="bg-white/20 backdrop-blur-md border border-white/30 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform duration-300 text-center">
                     <h3 class="text-3xl font-bold text-green-700">85%</h3>
                     <p class="text-gray-600 mt-2">Attendance Today</p>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform duration-300 text-center">
+
+                <!-- Card 4 -->
+                <div class="bg-white/20 backdrop-blur-md border border-white/30 p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform duration-300 text-center">
                     <h3 class="text-3xl font-bold text-green-700">15</h3>
                     <p class="text-gray-600 mt-2">Active Users</p>
                 </div>
+
             </div>
         </section>
 
 
-        <section class="mt-8 w-full py-16 bg-gray-100">
+
+        <section class="py-16 bg-white/20 mt-8 w-full shadow-lg">
             <h2 class="text-3xl font-bold text-center text-green-800 mb-12">
                 System Features
             </h2>
         
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6">
         
-                <!-- Feature 1 -->
+                <!-- Feature 1: Student Management -->
                 <div
-                    class="bg-white p-8 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
+                    class="bg-gray-100 p-6 rounded-xl border-2 border-white hover:border-gray-300 shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
                     <div class="flex justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-700" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-700" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5.121 17.804A4 4 0 017 16h10a4 4 0 011.879.804M12 12a4 4 0 100-8 4 4 0 000 8z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-green-700 mb-3">
-                        Student Management
-                    </h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Student Management</h3>
+                    <p class="text-gray-600 text-sm">
                         Easily add, update, and manage student records with secure access and organized data handling.
                     </p>
                 </div>
         
-                <!-- Feature 2 -->
+                <!-- Feature 2: Attendance Tracking -->
                 <div
-                    class="bg-white p-8 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
+                    class="bg-gray-100 p-6 rounded-xl border-2 border-white hover:border-gray-300 shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
                     <div class="flex justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-700" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-700" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 17v-2a4 4 0 014-4h4m4 4v2a4 4 0 01-4 4h-4m-4-4v2a4 4 0 01-4 4H5a4 4 0 01-4-4v-2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Attendance Tracking</h3>
+                    <p class="text-gray-600 text-sm">
+                        Track student attendance in real time with automated status updates and detailed reports.
+                    </p>
+                </div>
+        
+                <!-- Feature 3: Lecture Scheduling -->
+                <div
+                    class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center border-2 border-white hover:border-gray-300">
+                    <div class="flex justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-700" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-green-700 mb-3">
-                        Lecture Assignment
-                    </h3>
-                    <p class="text-gray-600">
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Lecture Scheduling</h3>
+                    <p class="text-gray-600 text-sm">
                         Assign lectures to specific classes and lecturers while keeping schedules accurate and up to date.
                     </p>
                 </div>
         
-                <!-- Feature 3 -->
+                <!-- Feature 4: Reports Module -->
                 <div
-                    class="bg-white p-8 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
+                    class="bg-gray-100 p-6 rounded-xl border-2 border-white hover:border-gray-300 shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
                     <div class="flex justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-700" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-700" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a3 3 0 006 0" />
+                                d="M3 3v18h18V3H3zm3 3h12v2H6V6zm0 4h12v2H6v-2zm0 4h12v2H6v-2z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-green-700 mb-3">
-                        Attendance Tracking
-                    </h3>
-                    <p class="text-gray-600">
-                        Track student attendance in real time with automated status updates and detailed reports.
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Reports Module</h3>
+                    <p class="text-gray-600 text-sm">
+                        Generate detailed reports for attendance and student performance, exportable in multiple formats.
+                    </p>
+                </div>
+        
+                <!-- Feature 5: Notifications -->
+                <div
+                    class="bg-gray-100 p-6 rounded-xl shadow border-2 border-white hover:border-gray-300 hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
+                    <div class="flex justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-700" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405M19 13V8a2 2 0 00-2-2H7a2 2 0 00-2 2v5m0 0H4l1.405 1.405" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Notifications</h3>
+                    <p class="text-gray-600 text-sm">
+                        Receive alerts for late or absent students, upcoming lectures, and system updates in real time.
+                    </p>
+                </div>
+        
+                <!-- Feature 6: User Roles & Permissions -->
+                <div
+                    class="bg-gray-100 p-6 rounded-xl border-2 border-white hover:border-gray-300 shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
+                    <div class="flex justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 text-green-700" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 3v4M19 3v4M12 12v7m-7 4h14a2 2 0 002-2v-7H5v7a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">User Roles & Permissions</h3>
+                    <p class="text-gray-600 text-sm">
+                        Assign roles to admin, lecturers, and staff with granular permissions to manage the system securely.
                     </p>
                 </div>
         
             </div>
         </section>
 
-        <section class="py-16 bg-white mt-8 w-full">
+
+        <section class="py-16 mt-8 w-full">
             <h2 class="text-3xl font-bold text-center text-green-800 mb-12">
                 New Installers
             </h2>
