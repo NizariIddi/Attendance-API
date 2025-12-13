@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 1s ease-in-out;
+        }
+
+
+    </style>
+    
+
+</head>
+<body class="bg-gray-200">
+    <nav class=" bg-green-700 text-gray-300 flex justify-between items-center mt-4 p-6 rounded-t-xl">
+        <h2 class="text-2xl font-bold text-green-200">Attendence MS</h2>
+        <div>
+            <ul class="flex flex-wrap justify-center gap-4 text-gray-300 font-medium">
+                <li class="cursor-pointer hover:text-white transition duration-200">
+                    Add Student
+                </li>
+                <li class="cursor-pointer hover:text-white transition duration-200">
+                    Add Lecture
+                </li>
+                <li class="cursor-pointer hover:text-white transition duration-200">
+                    Assign Lecture
+                </li>
+                <li class="cursor-pointer hover:text-white transition duration-200">
+                    Manage Users
+                </li>
+                <li class="cursor-pointer hover:text-green-200 transition duration-200">
+                    Profile
+                </li>
+                <li class="cursor-pointer text-red-400 hover:text-red-500 transition duration-200">
+                    Logout
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="flex flex-col items-center justify-center mt-8">
+        <div class="hero w-[90%] flex justify-center h-64 items-center rounded-xl">
+            <div class="bg-gradient-to-r from-green-900 to-green-600/20 w-full h-full flex justify-center items-center rounded-xl"> 
+            <div class="flex flex-col justiry-center items-center">
+                <h2 class="text-white text-3xl mb-3 font-bold">Welcome to you dshboard Admin</h2>
+                <p class="text-gray-300">We give you the best of the site's experience ever just stay tune and work it out.</p>
+                <button class="mt-6 bg-green-600 px-8 py-2 rounded-xl text-gray-100 hover:shadow-lg shadow-lg hover:scale-110 hover:border-2 transition transform duration-300">Get Stardet</button>
+            </div>
+            </div>
+        </div>
+
+        <section class="py-6 text-center mt-8">
+            <h2 class="text-2xl font-bold text-green-800 mb-6">Quick Actions</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition">Add Student</button>
+                <button class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition">Assign
+                    Lecture</button>
+                <button class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition">Manage Users</button>
+                <button class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition">Generate
+                    Report</button>
+            </div>
+        </section>
+
+
+        <section class="py-12">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-6">
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform duration-300 text-center">
+                    <h3 class="text-3xl font-bold text-green-700">120</h3>
+                    <p class="text-gray-600 mt-2">Students</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform duration-300 text-center">
+                    <h3 class="text-3xl font-bold text-green-700">12</h3>
+                    <p class="text-gray-600 mt-2">Lectures</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform duration-300 text-center">
+                    <h3 class="text-3xl font-bold text-green-700">85%</h3>
+                    <p class="text-gray-600 mt-2">Attendance Today</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition transform duration-300 text-center">
+                    <h3 class="text-3xl font-bold text-green-700">15</h3>
+                    <p class="text-gray-600 mt-2">Active Users</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mt-8 w-full py-16 bg-gray-100">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">
+                System Features
+            </h2>
+        
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+        
+                <!-- Feature 1 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
+                    <div class="flex justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-700" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5.121 17.804A4 4 0 017 16h10a4 4 0 011.879.804M12 12a4 4 0 100-8 4 4 0 000 8z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-3">
+                        Student Management
+                    </h3>
+                    <p class="text-gray-600">
+                        Easily add, update, and manage student records with secure access and organized data handling.
+                    </p>
+                </div>
+        
+                <!-- Feature 2 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
+                    <div class="flex justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-700" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-3">
+                        Lecture Assignment
+                    </h3>
+                    <p class="text-gray-600">
+                        Assign lectures to specific classes and lecturers while keeping schedules accurate and up to date.
+                    </p>
+                </div>
+        
+                <!-- Feature 3 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
+                    <div class="flex justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-700" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a3 3 0 006 0" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-green-700 mb-3">
+                        Attendance Tracking
+                    </h3>
+                    <p class="text-gray-600">
+                        Track student attendance in real time with automated status updates and detailed reports.
+                    </p>
+                </div>
+        
+            </div>
+        </section>
+
+        <section class="py-16 bg-white mt-8 w-full">
+            <h2 class="text-3xl font-bold text-center text-green-800 mb-12">
+                New Installers
+            </h2>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-6">
+
+                <!-- Installer 1 -->
+                <div
+                    class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
+                    <img src="installer1.jpg" alt="Installer 1" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover">
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">John Doe</h3>
+                    <p class="text-gray-600 text-sm">Installed Student Module</p>
+                </div>
+
+                <!-- Installer 2 -->
+                <div
+                    class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
+                    <img src="installer2.jpg" alt="Installer 2" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover">
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Jane Smith</h3>
+                    <p class="text-gray-600 text-sm">Installed Attendance Module</p>
+                </div>
+
+                <!-- Installer 3 -->
+                <div
+                    class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
+                    <img src="installer3.jpg" alt="Installer 3" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover">
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Michael Lee</h3>
+                    <p class="text-gray-600 text-sm">Installed Lecture Module</p>
+                </div>
+
+                <!-- Installer 4 -->
+                <div
+                    class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-lg hover:scale-105 transition transform duration-300 text-center">
+                    <img src="installer4.jpg" alt="Installer 4" class="w-20 h-20 mx-auto mb-4 rounded-full object-cover">
+                    <h3 class="text-lg font-semibold text-green-700 mb-2">Emily Clark</h3>
+                    <p class="text-gray-600 text-sm">Installed User Management</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="w-full mt-8 bg-green-700 text-gray-200 py-8">
+            <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+
+                <p class="text-sm">&copy; 2025 Attendance MS. All rights reserved.</p>
+
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition">Contact</a>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <script defer>
+        const hero = document.querySelector('.hero');
+
+        const images = [
+            'bg-attendence.jpeg',
+            'attendence.jpeg',
+        ];
+
+        let index = 0;
+
+        function changeBackground() {
+            hero.style.backgroundImage = `url('${images[index]}')`;
+            index = (index + 1) % images.length;
+        }
+
+        // initial image
+        changeBackground();
+
+        // change every 4 seconds
+        setInterval(changeBackground, 4000);
+    </script>
+
+</body>
+</html>
