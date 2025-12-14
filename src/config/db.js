@@ -6,7 +6,7 @@ dotenv.config()
 const connection = mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:process.env.DB_PASS || '7890',
+    password:'7890',
     database:'attendence_db'
 })
 
