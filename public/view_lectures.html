@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ViewLectures | AMS</title>
+</head>
+<body class="flex items-center justify-center bg-gray-100">
+    <nav
+        class="bg-green-700 text-gray-300 flex justify-between items-center p-6 rounded-b-xl fixed top-0 left-0 w-full z-50">
+    
+        <h2 class="text-2xl font-bold text-green-200">Attendence MS</h2>
+        <div>
+            <ul class="flex flex-wrap justify-center gap-4 text-gray-300 font-medium">
+                <li class="cursor-pointer hover:text-white transition duration-200">
+                    Add Student
+                </li>
+                <li class="cursor-pointer hover:text-white transition duration-200">
+                    Add Lecture
+                </li>
+                <li class="cursor-pointer hover:text-white transition duration-200">
+                    Assign Lecture
+                </li>
+                <li class="cursor-pointer hover:text-white transition duration-200">
+                    Manage Users
+                </li>
+                <li class="cursor-pointer hover:text-green-200 transition duration-200">
+                    Profile
+                </li>
+                <li class="cursor-pointer text-red-400 hover:text-red-500 transition duration-200">
+                    Logout
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="flex flex-col justify-center items-center w-[80%] mt-24">
+        <!-- Top Header -->
+        <div class="flex items-center justify-between px-6 w-full py-3 border-b border-gray-300 bg-white/40 backdrop-blur-md">
+            <!-- Left -->
+            <div class="flex items-center gap-6">
+                <h2 class="text-xl font-bold text-green-700 tracking-wide">A | MS</h2>
+        
+                <div class="bg-white/70 flex items-center gap-2 px-3 py-1 border border-white rounded-full shadow-sm">
+                    <i class="fa-solid fa-magnifying-glass text-sm text-gray-400"></i>
+                    <input type="text" placeholder="Search..."
+                        class="outline-none border-none bg-transparent text-sm text-gray-600 placeholder-gray-400 w-40">
+                </div>
+            </div>
+        
+            <!-- Right -->
+            <div class="flex items-center gap-4">
+                <button class="relative">
+                    <i class="fa-solid fa-bell text-xl text-red-500"></i>
+                    <span class="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
+        
+                <div
+                    class="bg-white/70 flex items-center gap-2 px-3 py-1 border border-white rounded-full shadow-sm cursor-pointer">
+                    <i class="fa-solid fa-user text-blue-500 text-lg"></i>
+                    <h4 class="text-sm text-gray-700 font-medium">User name</h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Page Title + Action -->
+        <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full px-6 py-4 border-b border-gray-300 gap-3">
+            <h2 class="text-2xl font-bold text-green-700">Clients</h2>
+        
+            <button
+                class="flex items-center gap-2 bg-blue-500 px-4 py-2 text-white rounded-lg shadow hover:bg-blue-600 transition duration-200">
+                <i class="fa-solid fa-plus text-white text-sm"></i>
+                New Lecture
+            </button>
+        </div>
+        
+        <!-- Filters -->
+        <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-center w-full px-6 py-3 border-b border-gray-300 gap-3 bg-white/30 backdrop-blur-sm">
+            <select name="filters" id="filter"
+                class="bg-transparent border border-gray-300 rounded-lg px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-green-400">
+                <option>All lectures</option>
+                <option>Course 1</option>
+                <option>Course 2</option>
+                <option>Course 3</option>
+            </select>
+        
+            <div class="bg-white/70 flex items-center gap-2 px-3 py-2 border border-white rounded-full shadow-sm">
+                <i class="fa-solid fa-magnifying-glass text-sm text-gray-400"></i>
+                <input type="text" placeholder="Search lectures..."
+                    class="outline-none border-none bg-transparent text-sm text-gray-600 placeholder-gray-400 w-48">
+            </div>
+        </div>
+
+        </div>
+        <div class="main_container">
+            <div class="mt-4 bg-gray-200 w-full min-h-screen p-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+                    <!-- Card 1 -->
+                    <div
+                        class="h-fit self-start py-4 px-3 border-2 border-white rounded-xl bg-gray-300 shadow hover:shadow-lg transition">
+                        <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                            <div class="flex gap-2">
+                                <div
+                                    class="bg-green-200 h-10 w-10 rounded-full border-2 border-green-600 flex items-center justify-center">
+                                    <i class="fa-regular fa-user text-xl"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <h3 class="font-semibold">Username</h3>
+                                    <p class="text-xs">
+                                        <i class="fa-regular fa-envelope text-green-700"></i>
+                                        username@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical text-green-800 cursor-pointer"></i>
+                        </div>
+                        <div class="flex items-center justify-between mt-3">
+                            <div class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>+255 750 761 558</p>
+                            </div>
+                            <a href="#" class="text-xs text-blue-700 hover:underline">
+                                View details →
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div
+                        class="h-fit self-start py-4 px-3 border-2 border-white rounded-xl bg-gray-300 shadow hover:shadow-lg transition">
+                        <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                            <div class="flex gap-2">
+                                <div
+                                    class="bg-green-200 h-10 w-10 rounded-full border-2 border-green-600 flex items-center justify-center">
+                                    <i class="fa-regular fa-user text-xl"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <h3 class="font-semibold">Username</h3>
+                                    <p class="text-xs">
+                                        <i class="fa-regular fa-envelope text-green-700"></i>
+                                        username@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical text-green-800 cursor-pointer"></i>
+                        </div>
+                        <div class="flex items-center justify-between mt-3">
+                            <div class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>+255 750 761 558</p>
+                            </div>
+                            <a href="#" class="text-xs text-blue-700 hover:underline">
+                                View details →
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div
+                        class="h-fit self-start py-4 px-3 border-2 border-white rounded-xl bg-gray-300 shadow hover:shadow-lg transition">
+                        <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                            <div class="flex gap-2">
+                                <div
+                                    class="bg-green-200 h-10 w-10 rounded-full border-2 border-green-600 flex items-center justify-center">
+                                    <i class="fa-regular fa-user text-xl"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <h3 class="font-semibold">Username</h3>
+                                    <p class="text-xs">
+                                        <i class="fa-regular fa-envelope text-green-700"></i>
+                                        username@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical text-green-800 cursor-pointer"></i>
+                        </div>
+                        <div class="flex items-center justify-between mt-3">
+                            <div class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>+255 750 761 558</p>
+                            </div>
+                            <a href="#" class="text-xs text-blue-700 hover:underline">
+                                View details →
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div
+                        class="h-fit self-start py-4 px-3 border-2 border-white rounded-xl bg-gray-300 shadow hover:shadow-lg transition">
+                        <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                            <div class="flex gap-2">
+                                <div
+                                    class="bg-green-200 h-10 w-10 rounded-full border-2 border-green-600 flex items-center justify-center">
+                                    <i class="fa-regular fa-user text-xl"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <h3 class="font-semibold">Username</h3>
+                                    <p class="text-xs">
+                                        <i class="fa-regular fa-envelope text-green-700"></i>
+                                        username@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical text-green-800 cursor-pointer"></i>
+                        </div>
+                        <div class="flex items-center justify-between mt-3">
+                            <div class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>+255 750 761 558</p>
+                            </div>
+                            <a href="#" class="text-xs text-blue-700 hover:underline">
+                                View details →
+                            </a>
+                        </div>
+                    </div>
+            
+                    <!-- Card 5 -->
+                    <div
+                        class="h-fit self-start py-4 px-3 border-2 border-white rounded-xl bg-gray-300 shadow hover:shadow-lg transition">
+                        <div class="flex justify-between items-center border-b border-gray-100 py-2">
+                            <div class="flex gap-2">
+                                <div
+                                    class="bg-green-200 h-10 w-10 rounded-full border-2 border-green-600 flex items-center justify-center">
+                                    <i class="fa-regular fa-user text-xl"></i>
+                                </div>
+                                <div class="text-sm">
+                                    <h3 class="font-semibold">Username</h3>
+                                    <p class="text-xs">
+                                        <i class="fa-regular fa-envelope text-green-700"></i>
+                                        username@example.com
+                                    </p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical text-green-800 cursor-pointer"></i>
+                        </div>
+                        <div class="flex items-center justify-between mt-3">
+                            <div class="flex items-center gap-2 text-xs">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <p>+255 750 761 558</p>
+                            </div>
+                            <a href="#" class="text-xs text-blue-700 hover:underline">
+                                View details →
+                            </a>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
